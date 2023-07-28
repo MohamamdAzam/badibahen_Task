@@ -55,13 +55,14 @@ Sample Response (HTTP 200 OK):
         "dueDate": "2023-09-15"
     }
 ]
+```
 Make Payment
 Endpoint: POST /api/bill/{billId}/payment
 
 Sample Request:
 POST https://localhost:<port>/api/bill/1/payment
 Content-Type: application/json
-
+```
 {
     "paymentAmount": 300
 }
@@ -71,6 +72,7 @@ Sample Response (HTTP 200 OK):
     "paymentAmount": 300,
     "paymentDate": "2023-07-28"
 }
+```
 Retrieve Payment History
 Endpoint: GET /api/student/{studentId}/payment-history
 
@@ -78,6 +80,7 @@ Sample Request:
 GET https://localhost:<port>/api/student/123/payment-history
 
 Sample Response (HTTP 200 OK):
+```
 [
     {
         "paymentId": 1,
@@ -90,6 +93,7 @@ Sample Response (HTTP 200 OK):
         "paymentDate": "2023-08-10"
     }
 ]
+```
 Deployment 🚀
 To deploy the API stack to a production server, follow these steps:
 
